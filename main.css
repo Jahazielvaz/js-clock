@@ -4,3 +4,15 @@
   margin: 0;
   list-style: none;
 }
+
+body{
+  background: blue;
+}
+
+#clock-wrapper{
+  border: 20px solid white;
+  max-width: 300px;
+  min-height: 300px;
+  margin: 150px auto;
+
+}
