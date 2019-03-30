@@ -3,9 +3,10 @@ let currentTime = currentDate.getSeconds();
 
 let secondsHand = document.getElementById('seconds-hand');
 
-let secondsRotation = (num) => {
-  secondsHand += secondsHand.style["transform"] = `rotate(${num}deg)`;
-  // secondsHand += secondsHand.style["transform-origin"] = "right";
+let secondsRotation = () => {
+   return secondsHand.classList.add("seconds-rotation");
 }
 
-secondsRotation(50);
+let tryFunc = () => {
+    return setInterval(console.log('Im chillin'), 1000);
+}

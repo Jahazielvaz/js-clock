@@ -36,10 +36,11 @@ body{
 }
 
 .seconds-hand{
-  /* transform: rotate(30deg);
-  transform-origin: right; */
+  /* transform: rotate(30deg); */
+
   position: relative;
   top: 145px;
+  transform-origin: right;
 }
 
 .hour-hand{
@@ -49,5 +50,4 @@ body{
 
 .seconds-rotation{
   transform: rotate(6deg);
-  transform-origin: right;
 }
