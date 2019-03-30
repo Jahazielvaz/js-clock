@@ -24,8 +24,25 @@ body{
   height: 5px;
   color: white;
   background: white;
+  /* transform: rotate(45deg); */
+  /* transform-origin: right; */
+}
+
+.minute-hand{
+  /* transform: rotate(45deg);
+  transform-origin: right; */
   position: relative;
   top: 50%;
-  /* transform: rotate(195deg);
+}
+
+.second-hand{
+  /* transform: rotate(30deg);
   transform-origin: right; */
+  position: relative;
+  top: 145px;
+}
+
+.hour-hand{
+  position: relative;
+  top: 155px;
 }
