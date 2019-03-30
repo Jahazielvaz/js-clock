@@ -1,10 +1,11 @@
 let currentDate = new Date();
 let currentTime = currentDate.getSeconds();
 
-let seconds = document.getElementsByClassName("second-hand");
+let secondsHand = document.getElementById('seconds-hand');
 
-let rotation = () => {
-  return seconds.style.color = "yellow";
+let secondsRotation = (num) => {
+  secondsHand += secondsHand.style["transform"] = `rotate(${num}deg)`;
+  // secondsHand += secondsHand.style["transform-origin"] = "right";
 }
 
-rotation();
+secondsRotation(50);
