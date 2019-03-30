@@ -1,10 +1,10 @@
 let currentDate = new Date();
 let currentTime = currentDate.getSeconds();
 
-let activeTime = () => {
-  return currentTime;
+let seconds = document.getElementsByClassName("second-hand");
+
+let rotation = () => {
+  return seconds.style.color = "yellow";
 }
 
-
-console.log(currentTime);
-setInterval(() => console.log(`The current time is ${activeTime()}`), 1000);
+rotation();
