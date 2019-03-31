@@ -1,8 +1,10 @@
 // let currentDate = new Date();
 // let currentTime = currentDate.getSeconds();
 //
-// let secondsHand = document.getElementById('seconds-hand');
-
+let secondsHand = document.getElementById('seconds-hand');
+let minutesHand = document.getElementById('minutes-hand');
+let hoursHand = document.getElementById('hours-hand');
+let display = document.getElementById('display-inner');
 // let secondsRotation = (change) => {
 //   change = 0;
 //    change += 6;
@@ -22,8 +24,21 @@
 let setDate = () => {
   const now = new Date();
   let seconds = now.getSeconds();
+  let minutes = now.getMinutes();
+  let hours = now.getHours();
+  if(hours > 12){
+    hours -= 12
+  } else if(hours == 0){
+    hours = 12
+  }
+
   let secondsDegrees = (seconds / 60) * 360;
-  console.log(secondsDegrees)
+  let minutesDegrees = (minutes / 60) * 360;
+  let hoursDegrees = (hours / 24) * 360;
+  secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+  minutesHand.style.transform =  `rotate(${minutesDegrees}deg)`;
+  hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+  display.innerHTML = `${hours}:${minutes}:${seconds}`;
 }
 
 setInterval(setDate, 1000);

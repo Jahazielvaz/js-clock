@@ -6,11 +6,13 @@
 }
 
 body{
-  background: blue;
+  background: #ddd;
 }
 
 #clock-wrapper{
-  border: 20px solid white;
+  background: url('./media-files/arches.jpg')center center no-repeat;
+  background-size: cover;
+  border: 20px solid #113;
   width: 300px;
   height: 300px;
   margin: 150px auto;
@@ -26,8 +28,9 @@ body{
   background: white;
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-  /* transform: rotate(45deg); */
-  /* transform-origin: right; */
+  z-index: 1;
+  border-radius: 20px;
+  opacity: .6;
 }
 
 .minute-hand{
@@ -35,21 +38,43 @@ body{
   transform-origin: right; */
   position: relative;
   top: 50%;
+  transform-origin: right;
+  background: #bbb;
 }
 
 .seconds-hand{
   /* transform: rotate(30deg); */
-
+  background: red;
   position: relative;
   top: 145px;
   transform-origin: right;
+  height: 2px;
 }
 
 .hour-hand{
   position: relative;
   top: 155px;
+  transform-origin: 100%;
 }
 
 .seconds-rotation{
   transform: rotate(6deg);
+}
+
+#display{
+  width: 70px;
+  height: 30px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  position:relative;
+  top: 120px;
+  left: 230px;
+  transform: rotate(-90deg);
+  text-align: center;
+}
+
+#display-inner{
+  line-height: 30px;
+  font-weight: bolder;
 }
