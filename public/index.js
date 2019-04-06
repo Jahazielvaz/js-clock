@@ -34,7 +34,7 @@ let setDate = () => {
 
   let secondsDegrees = (seconds / 60) * 360;
   let minutesDegrees = (minutes / 60) * 360;
-  let hoursDegrees = (hours / 24) * 360;
+  let hoursDegrees = (hours / 12) * 360;
   secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
   minutesHand.style.transform =  `rotate(${minutesDegrees}deg)`;
   hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;

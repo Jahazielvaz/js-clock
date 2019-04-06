@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jazzy Clock</title>
+    <link rel="stylesheet" href="./main.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.9.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.9.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.9.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.9.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.9.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+  </head>
+  <body>
+    <div id="clock-wrapper">
+      <section id="hours-hand" class="hand hour-hand"></section>
+      <section id="minutes-hand" class="hand minute-hand"></section>
+      <section id="seconds-hand" class="hand seconds-hand"></section>
+      <section id="display"><p id="display-inner"></p></section>
+    </div>
+
+
+  <!-- END OF APPLICATION -->
+    <script src='./index.js'></script>
+  </body>
+</html>

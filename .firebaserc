@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "clock-staging": "jazzy-clock",
+    "default": "jazzy-clock"
+  }
+}
